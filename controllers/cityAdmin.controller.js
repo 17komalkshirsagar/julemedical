@@ -1,12 +1,14 @@
 const asyncHandler = require("express-async-handler")
 const validator = require("validator")
-const { checkEmpty } = require("../utils/handleempty")
+
 const Lab = require("../models/Lab")
 const LabPackage = require("../models/LabPackage")
 const bcrypt = require("bcrypt")
 const sendEmail = require("../utils/email")
 const Orders = require("../models/Orders")
 const OrderHistory = require("../models/OrderHistory")
+const { checkEmpty } = require("../utils/handleEmpty")
+
 
 
 //TODO: Lab  CRUD Start

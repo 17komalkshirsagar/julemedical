@@ -49,6 +49,9 @@ exports.getAllMedicalOrders = asyncHandler(async (req, res) => {
     // }
     return res.json({ message: "Get All MedicalOrders Success", result })
 })
+
+
+
 exports.updateMedicalQuotation = asyncHandler(async (req, res) => {
     const { medicalId } = req.params
     const { medical, customer, city, location, cancleReason, status, mrp, sellingPrice } = req.body
